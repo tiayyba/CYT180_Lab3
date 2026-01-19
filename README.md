@@ -37,6 +37,7 @@ Open a **new Colab notebook** and execute each cell below.
 ### Step 2 — Set environment variables
 
 Environment variables are key–value settings that many programs read at startup to find dependencies (like Java) and their own install paths (like Hadoop). In Colab, we set them for the current Python process and shell so that Hadoop can find Java and its own binaries/config.
+
 You will run the following commands one by one.
 ```
 import os
