@@ -11,7 +11,7 @@ Pseudo‑distributed Hadoop normally requires Java configuration and passwordles
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 - Install Hadoop in pseudo‑distributed mode on Google Colab.  
 - Create and interact with HDFS.  
 - Load cybersecurity logs (Zeek, Windows EVTX → CSV, small NetFlow‑like).  
@@ -20,7 +20,7 @@ Pseudo‑distributed Hadoop normally requires Java configuration and passwordles
 
 ---
 
-# 🚀 Getting Started (Google Colab)
+## Step 1: Getting Started (Google Colab)
 
 Open a **new Colab notebook** and execute each cell below.
 
