@@ -52,7 +52,7 @@ Next run the following code to download  Hadoop
 
 Environment variables are key–value settings that many programs read at startup to find dependencies (like Java) and their own install paths (like Hadoop). In Colab, we set them for the current Python process and shell so that Hadoop can find Java and its own binaries/config.
 
-Run the following Python commands to set the environment variables.
+Run the following cell to set the environment variables.
 
 ```
 import os
