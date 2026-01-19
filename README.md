@@ -17,7 +17,6 @@ The lab directly reinforces the following concepts from week 3:
 - Create, inspect, and manipulate directories & files in HDFS.
 - Understand how HDFS metadata and block storage work in practice.
 - Run a simple MapReduce job using security‑relevant data.
-- Explain how distributed storage supports cybersecurity analytics use cases like log retention, threat hunting, and large‑scale ETL.
 ---
 ## Prerequisites
 
