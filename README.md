@@ -77,7 +77,7 @@ Below I explain what each of this enviroment variable is about.
 - **PATH** → Lets you run hdfs and hadoop without typing long paths.
 
 ### Step 3 — Create Hadoop Configuration Files
-Now that JAVA_HOME, HADOOP_HOME, HADOOP_CONF_DIR, and PATH are set, the next required task in a  HDFS setup is to create Hadoop configuration files. HDFS will not start unless core-site.xml and hdfs-site.xml exist.
+Now that `JAVA_HOME`, `HADOOP_HOME`, `HADOOP_CONF_DIR`, and `PATH` are set, the next required task in a  HDFS setup is to create Hadoop configuration files. HDFS will not start unless `core-site.xml` and `hdfs-site.xml` exist.
 These two files tell Hadoop:
 - where your NameNode lives
 - what filesystem to use
