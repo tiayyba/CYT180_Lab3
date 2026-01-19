@@ -3,6 +3,7 @@
 ## Intro to Hadoop & HDFS for Cybersecurity Data Analytics (Google Colab)
 
 This lab introduces Hadoop in **pseudo‑distributed mode** on Google Colab and walks you through loading and analyzing **cybersecurity datasets** using HDFS + MapReduce/Streaming.  
+
 **Concepts come from Week 3 slides:**
 - HDFS blocks, replication, NameNode/DataNode roles, read/write paths, and data locality
 
