@@ -144,8 +144,7 @@ Run the following commands one by one. You may ignore warnings about “Unable t
 ```
 
 ### Step 6 — Load Cybersecurity Logs into HDFS
-We will download a real Zeek conn.log.gz file from the public zed-sample-data repository on GitHub.
-This dataset contains Zeek logs generated from real WRCCDC PCAPs.
+We will download a real `Zeek conn.log.gz` file from the public zed-sample-data repository on GitHub.
 Run the following command one by one.
 
 ```
