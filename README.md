@@ -3,8 +3,10 @@
 ## Intro to Hadoop & HDFS for Cybersecurity Data Analytics (Google Colab)
 
 This lab introduces Hadoop in **pseudo‑distributed mode** on Google Colab and walks you through loading and analyzing **cybersecurity datasets** using HDFS + MapReduce/Streaming.  
-Concepts come from Week 3 slides: HDFS blocks, replication, NameNode/DataNode roles, read/write paths, and data locality. [1](https://docs.zeek.org/en/master/logs/index.html)  
-Pseudo‑distributed Hadoop normally requires Java configuration and passwordless SSH as noted in the official Hadoop single‑node setup. [2](https://barrelsofdata.com/apache-hadoop-pseudo-distributed-mode)
+**Concepts come from Week 3 slides:**
+- HDFS blocks, replication, NameNode/DataNode roles, read/write paths, and data locality
+
+Pseudo‑distributed Hadoop normally requires Java configuration and passwordless SSH as noted in the official Hadoop single‑node setup. (https://barrelsofdata.com/apache-hadoop-pseudo-distributed-mode)
 
 ---
 
