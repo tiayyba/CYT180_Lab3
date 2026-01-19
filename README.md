@@ -53,7 +53,7 @@ Below I explain what each of this enviroment variable is about.
 - **HADOOP_HOME**
   - This is the top folder where Hadoop is unpacked.
   -  Hadoop’s scripts use this to locate binaries (bin/) and configuration (etc/hadoop/).
-  -  In Colab: we unpacked into /content/hadoop-3.3.1:
+  -  In Colab, we unpacked into /content/hadoop-3.3.1:
 - **HADOOP_CONF_DIR**
   - It points to the directory containing Hadoop’s XML configs (core-site.xml, hdfs-site.xml, etc.).
   - When you run Hadoop commands (e.g., hdfs dfs -ls /), Hadoop reads these files to know the default filesystem URI (fs.defaultFS), replication factor, and local data directories. If this isn’t set (or points somewhere empty), commands may try to use default/standalone mode and won’t talk to your NameNode.
