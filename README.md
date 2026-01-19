@@ -69,3 +69,13 @@ Below I explain what each of this enviroment variable is about.
   - When you run Hadoop commands (e.g., hdfs dfs -ls /), Hadoop reads these files to know the default filesystem URI (fs.defaultFS), replication factor, and local data directories. If this isn’t set (or points somewhere empty), commands may try to use default/standalone mode and won’t talk to your NameNode.
 - **PATH**
   -  This adds the Hadoop binaries (hdfs, hadoop, yarn) and sbin (daemon helpers). So that you can run hdfs, hadoop jar, etc., without typing the full paths.
+
+### Step 3 — Create Hadoop Configuration Files
+Now that JAVA_HOME, HADOOP_HOME, HADOOP_CONF_DIR, and PATH are set, the next required task in a real HDFS setup is to create Hadoop configuration files. 
+These two files tell Hadoop:
+- where your NameNode lives
+- what filesystem to use
+- where to store NameNode/DataNode data
+- how many replicas to maintain
+
+Without these files, Hadoop will NOT start HDFS
