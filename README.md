@@ -40,11 +40,21 @@ Environment variables are key–value settings that many programs read at startu
 
 You will run the following commands one by one.
 ```
+
 import os
+
+# 1) Java
 os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64"
+
+# 2) Hadoop base dir
 os.environ["HADOOP_HOME"] = "/content/hadoop-3.3.1"
-os.environ["HADOOP_CONF_DIR"] = "/content/hadoop-3.3.1/etc/hadoop"
-os.environ["PATH"] += ":/content/hadoop-3.3.1/bin:/content/hadoop-3.3.1/sbin"
+
+# 3) Hadoop config dir
+os.environ["HADOOP_CONF_DIR"] = f'{os.environ["HADOOP_HOME"]}/etc/hadoop'
+
+# 4) PATH to Hadoop binaries/sbin
+os.environ["PATH"] += f':{os.environ["HADOOP_HOME"]}/bin:{os.environ["HADOOP_HOME"]}/sbin'
+
 ```
 Below I explain what each of this enviroment variable is about.
 - **1. JAVA_HOME**
