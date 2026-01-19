@@ -20,13 +20,8 @@ Pseudo‑distributed Hadoop normally requires Java configuration and passwordles
 
 ---
 
-## Step 1: Getting Started (Google Colab)
-
+## 1. System prep — Java & Hadoop
 Open a **new Colab notebook** and execute each cell below.
-
----
-
-## 0) Install Java + Hadoop
 
 ```bash
 !apt-get -qq update
@@ -34,4 +29,6 @@ Open a **new Colab notebook** and execute each cell below.
 
 # Download Hadoop 3.3.1
 !wget -q https://archive.apache.org/dist/hadoop/core/hadoop-3.3.1/hadoop-3.3.1.tar.gz
+
+# Extract the zip file
 !tar -xzf hadoop-3.3.1.tar.gz
