@@ -43,6 +43,7 @@ Next run the following code to download  Hadoop
 ```
 # Download Hadoop 3.3.1
 !wget -q https://archive.apache.org/dist/hadoop/core/hadoop-3.3.1/hadoop-3.3.1.tar.gz
+
 # Extract the zip file
 !tar -xzf hadoop-3.3.1.tar.gz
 
