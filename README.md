@@ -276,5 +276,6 @@ Your screenshots **must include** the following:
      *or*
    - A screenshot showing the `conn.log` file after unzipping and before uploading.
 
-Please ensure all screenshots are **clear, readable, and taken from your own Colab session**. With each screenshot, include date and time as a proof from a separate terminal window.  
-Submit your screenshots either as a **single PDF**.
+5. Please ensure all screenshots are **clear, readable, and taken from your own Colab session**.
+6. With each screenshot, include date and time as a proof from a separate terminal window.
+7. Submit your screenshots as a **single PDF**.
