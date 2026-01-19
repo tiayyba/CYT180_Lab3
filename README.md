@@ -20,7 +20,7 @@ Pseudo‑distributed Hadoop normally requires Java configuration and passwordles
 
 ---
 
-### 1. System prep — Java & Hadoop
+### Step 1. System prep — Java & Hadoop
 Open a **new Colab notebook** and execute each cell below.
 
 ```bash
