@@ -201,6 +201,7 @@ Even though it's not cybersecurity‑specific, WordCount is perfect for:
 - running a real distributed job on the Zeek log
 
 And Zeek logs are plaintext, so running WordCount on them works immediately.
+
 **Run WordCount on the Zeek conn.log**
 ```
 !hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar \
