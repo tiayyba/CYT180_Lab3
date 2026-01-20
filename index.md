@@ -268,6 +268,7 @@ Run grep to extract lines containing `tcp`. Since `tcp` appears in the protocol 
 !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
 
 ```
+---
 
 ## Conclusion
 In this lab, you successfully:
@@ -280,7 +281,7 @@ In this lab, you successfully:
   - WordCount — to get high‑level insights from the log
   - Grep — to filter the dataset based on patterns
 
-
+---
 ## Submission Instructions
 
 Submit **5 screenshots** that clearly show the work you completed in this lab.
