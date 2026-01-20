@@ -238,37 +238,35 @@ In this lab, you successfully:
 
 ## Submission Instructions
 
-Submit **3–5 screenshots** that clearly show the work you completed in this lab.
+Submit **5 screenshots** that clearly show the work you completed in this lab.
 
 Your screenshots **must include** the following:
 
-1. **HDFS Setup Verification**
+1. **Hadoop Daemons Running**
+   - Output of:
+     ```bash
+     !jps
+     ```
+2. **HDFS Setup Verification**
    - Output of:
      ```bash
      !hdfs dfs -ls /
      ```
-     showing the `/logs` and `/cyt180` directories.
+     showing the `/logs` and `/cyt180` directories. You must capture this screenshot after completing step 5.
 
-2. **WordCount Job Output**
+3. **Log file**
+   - A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
+
+4. **WordCount Job Output**
    - A screenshot showing the result of:
      ```bash
      !hdfs dfs -cat /output_wordcount/part-r-00000 | head
      ```
-
-3. **Grep Job Output**
+5. **Grep Job Output**
    - A screenshot showing the result of:
      ```bash
      !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
      ```
-
-4. **(Optional but recommended)**
-   - A screenshot of the Hadoop daemons running:
-     ```bash
-     !jps
-     ```
-     *or*
-   - A screenshot showing the `conn.log` file after unzipping and before uploading.
-
-5. Please ensure all screenshots are **clear, readable, and taken from your own Colab session**.
-6. With each screenshot, include date and time as a proof from a separate terminal window.
-7. Submit your screenshots as a **single PDF**.
+7. Please ensure all screenshots are **clear, readable, and taken from your own Colab session**.
+8. With each screenshot, include date and time as a proof from a separate terminal window.
+9. Submit your screenshots as a **single PDF**.
