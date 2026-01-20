@@ -154,7 +154,7 @@ Run the following command one by one.
 
 !wget -q https://raw.githubusercontent.com/brimdata/zed-sample-data/main/zeek-default/conn.log.gz
 
-#Confirm it's downloaded:
+# Confirm it's downloaded:
 !ls -lh conn.log.gz
 
 # Extract the compressed file
