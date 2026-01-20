@@ -287,23 +287,23 @@ In this lab, you successfully:
 - Submit **5 screenshots** that clearly show the work you completed in this lab.
 
 - Your screenshots **must include** the following:
-  1. **Hadoop Daemons Running —** output of:
+  - **Hadoop Daemons Running —** output of:
      ```bash
      !jps
      ```
-  2. **HDFS Setup Verification —** output of:
+  - **HDFS Setup Verification —** output of:
      ```bash
      !hdfs dfs -ls /
      ```
      showing the `/logs` and `/cyt180` directories. You must capture this screenshot after completing step 5.
 
-  3. **Log file —**  A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
+  - **Log file —**  A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
 
-  4. **WordCount Job Output —**  screenshot showing the result of:
+  - **WordCount Job Output —**  screenshot showing the result of:
      ```bash
      !hdfs dfs -cat /output_wordcount/part-r-00000 | head
      ```
-  5. **Grep Job Output —** a screenshot showing the result of:
+  - **Grep Job Output —** a screenshot showing the result of:
      ```bash
      !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
      ```
