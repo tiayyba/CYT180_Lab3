@@ -288,8 +288,7 @@ Submit **5 screenshots** that clearly show the work you completed in this lab.
 
 Your screenshots **must include** the following:
 
-1. **Hadoop Daemons Running**
-   - Output of:
+1. **Hadoop Daemons Running —** Output of:
      ```bash
      !jps
      ```
