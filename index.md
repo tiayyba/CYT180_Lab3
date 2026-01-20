@@ -9,6 +9,7 @@ The lab directly reinforces the following concepts from week 3:
 - Reads/writes
 - MapReduce basics
 - Cybersecurity analytics use cases
+
 ---
 
 ## Learning Objectives
@@ -16,6 +17,7 @@ The lab directly reinforces the following concepts from week 3:
 - Create, inspect, and manipulate directories & files in HDFS.
 - Understand how HDFS metadata and block storage work in practice.
 - Run a simple MapReduce job using security‑relevant data.
+
 ---
 ### Step 1. System prep — Java & Hadoop
 Open a **new Colab notebook** and execute each cell below.
