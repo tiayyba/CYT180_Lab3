@@ -1,6 +1,5 @@
 
-# CYT180 – Week 3 Lab  
-## Intro to Hadoop & HDFS for Cybersecurity Data Analytics (Google Colab)
+# CYT180 – Lab3: Intro to Hadoop & HDFS for Cybersecurity Data Analytics (Google Colab)
 
 This lab introduces Hadoop in **pseudo‑distributed mode** on Google Colab and walks you through loading and analyzing **cybersecurity datasets** using HDFS + MapReduce/Streaming.  This environment allows you to experiment with Hadoop without installing anything locally.
 
