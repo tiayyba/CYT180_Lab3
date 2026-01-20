@@ -18,13 +18,6 @@ The lab directly reinforces the following concepts from week 3:
 - Understand how HDFS metadata and block storage work in practice.
 - Run a simple MapReduce job using security‑relevant data.
 ---
-## Prerequisites
-
-- Google Colab
-- Basic Linux CLI skills
-- Understanding of logs (HTTP/SSH)
-- Intro knowledge of distributed systems
----
 ### Step 1. System prep — Java & Hadoop
 Open a **new Colab notebook** and execute each cell below.
 
