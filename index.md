@@ -9,7 +9,7 @@ The lab directly reinforces the following concepts from week 3:
 - Reads/writes
 - MapReduce basics
 - Cybersecurity analytics use cases
-s
+
 ---
 
 ## Learning Objectives
