@@ -146,7 +146,7 @@ Run the following command one by one.
 #Confirm it's downloaded:
 !ls -lh conn.log.gz
 
-# Unzip it
+# Extract the compressed file
 !gunzip -f conn.log.gz
 
 ```
