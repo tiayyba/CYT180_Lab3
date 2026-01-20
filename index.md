@@ -24,7 +24,7 @@ Open a **new Colab notebook** and execute the commands give below in each step, 
 
 ### Step 1. System prep — Java & Hadoop
 
-First you will insatll java becasue Hadoop is written in Java, and all core components (HDFS, YARN, MapReduce) run on the JVM. Run the following commands.
+First you will insatll java becasue Hadoop is written in Java, and all core components (HDFS, YARN, MapReduce) run on the JVM. Run the following commands to install java.
 
 ```bash
 
@@ -37,7 +37,7 @@ First you will insatll java becasue Hadoop is written in Java, and all core comp
 # Check Java
 !java -version
 ```
-Next run the following code to download  Hadoop
+Next run the following commands to download  Hadoop and extract the archive file.
 ```
 # Download Hadoop 3.3.1
 !wget -q https://archive.apache.org/dist/hadoop/core/hadoop-3.3.1/hadoop-3.3.1.tar.gz
