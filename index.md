@@ -163,6 +163,7 @@ Run the following command one by one.
 ```
 
 After unzipping, the file conn.log will appear in your Colab directory.
+
 **Upload to HDFS**
 
 ```
