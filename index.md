@@ -143,6 +143,7 @@ Run the following commands one by one. You may ignore warnings about “Unable t
 ```
 
 ### Step 5 — Create HDFS Directories
+Let's create a directory for cyt180 in HDFS.
 
 ```
 
@@ -167,9 +168,8 @@ Run the following command one by one.
 
 ```
 
-After unzipping, the file conn.log will appear in your Colab directory.
-
-**Upload to HDFS**
+After unzipping, the file conn.log will appear in your Colab directory. We will Upload it to HDFS.
+Run the following commands.
 
 ```
 
