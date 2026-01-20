@@ -19,8 +19,12 @@ The lab directly reinforces the following concepts from week 3:
 - Run a simple MapReduce job using security‑relevant data.
 
 ---
+## Lab Insturctions
+Open a **new Colab notebook** and execute the commands give below in each step, make sure to carefully read and understand each step.
+
 ### Step 1. System prep — Java & Hadoop
-Open a **new Colab notebook** and execute each cell below.
+
+First you will insatll java becasue Hadoop is written in Java, and all core components (HDFS, YARN, MapReduce) run on the JVM. Run the following commands.
 
 ```bash
 
