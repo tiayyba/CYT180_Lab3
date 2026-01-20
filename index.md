@@ -46,6 +46,7 @@ Next run the following commands to download  Hadoop and extract the archive file
 !tar -xzf hadoop-3.3.1.tar.gz
 
 ```
+
 ### Step 2 — Set environment variables
 
 Environment variables are key–value settings that many programs read at startup to find dependencies (like Java) and their own install paths (like Hadoop). In Colab, we set them for the current Python process and shell so that Hadoop can find Java and its own binaries/config.
