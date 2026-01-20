@@ -132,7 +132,7 @@ Run the following commands one by one. You may ignore warnings about “Unable t
 !hdfs --daemon start namenode
 !hdfs --daemon start datanode
 
-#Check they’re running
+# Check they’re running
 !jps
 
 ```
