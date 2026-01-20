@@ -77,7 +77,9 @@ These two files tell Hadoop:
 - what filesystem to use
 - where to store NameNode/DataNode data
 - how many replicas to maintain
+  
 Run the following commands:
+
 ```
 
 %%bash
@@ -114,13 +116,16 @@ cat > hdfs-site.xml << 'EOF'
 EOF
 
 ```
+
 - fs.defaultFS → The NameNode URI
 - dfs.replication=1 → Required for single-node mode
 - NameNode/DataNode dirs → Where metadata + data blocks are stored
 
 ### Step 4 — Format HDFS and Start Daemons
 Run the following commands one by one. You may ignore warnings about “Unable to load native-hadoop library.” These are normal in Colab.
+
 ```
+
 !hdfs namenode -format
 
 # Start NameNode + DataNode
@@ -129,12 +134,16 @@ Run the following commands one by one. You may ignore warnings about “Unable t
 
 #Check they’re running
 !jps
+
 ```
+
 ### Step 5 — Create HDFS Directories
 
 ```
+
 !hdfs dfs -mkdir /cyt180
 !hdfs dfs -ls /
+
 ```
 
 ### Step 6 — Load Cybersecurity Logs into HDFS
@@ -142,6 +151,7 @@ We will download a real `Zeek conn.log.gz` file from the public zed-sample-data 
 Run the following command one by one.
 
 ```
+
 !wget -q https://raw.githubusercontent.com/brimdata/zed-sample-data/main/zeek-default/conn.log.gz
 
 #Confirm it's downloaded:
@@ -151,25 +161,36 @@ Run the following command one by one.
 !gunzip -f conn.log.gz
 
 ```
+
 After unzipping, the file conn.log will appear in your Colab directory.
 **Upload to HDFS**
 
 ```
+
 !hdfs dfs -mkdir -p /logs
 !hdfs dfs -put conn.log /logs/
 !hdfs dfs -ls /logs
+
 ```
 
 ### Step 7 — Inspect the Zeek Log in HDFS
 Before doing MapReduce, you should see what the data looks like.
 Run the following command:
+
 ```
+
 !hdfs dfs -head /logs/conn.log
+
 ```
+
 A typical conn.log line looks like:
+
 ```
+
 1672531200.12345 Ckq8..... 192.168.1.10 12345 10.0.0.5 80 tcp ssl 1 52 104 ...
+
 ```
+
 **Columns include:**
 
 - Timestamp
@@ -184,9 +205,13 @@ A full description of fields can be found in Zeek documentation (not needed for 
 
 ### Step 8 — MapReduce Example: 
 Hadoop ships with several example jobs in the directory:
+
 ```
+
 $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar
+
 ```
+
 The most classic one is WordCount.
 Even though it's not cybersecurity‑specific, WordCount is perfect for:
 
@@ -197,21 +222,29 @@ Even though it's not cybersecurity‑specific, WordCount is perfect for:
 And Zeek logs are plaintext, so running WordCount on them works immediately.
 
 **Run WordCount on the Zeek conn.log**
+
 ```
+
 !hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar \
     wordcount \
     /logs/conn.log \
     /output_wordcount
+
 ```
+
 **View the results**
+
 ```
+
 !hdfs dfs -cat /output_wordcount/part-r-00000 | head
+
 ```
 
 ### Step 9 — Use Hadoop’s Built‑In Grep Example
 Hadoop also has a built‑in grep job for filtering matching lines.
 We'll use it to search for all TCP connections inside the Zeek log.
 Run grep to extract lines containing `tcp`. Since `tcp` appears in the protocol field of most flows, so this will return lines containing TCP traffic.
+
 ```
 
 !hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar \
@@ -219,10 +252,15 @@ Run grep to extract lines containing `tcp`. Since `tcp` appears in the protocol 
     /logs/conn.log \
     /output_grep_tcp \
     tcp
+
 ```
+
 **View results**
+
 ```
+
 !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
+
 ```
 
 ## Conclusion
