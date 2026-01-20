@@ -300,8 +300,7 @@ Your screenshots **must include** the following:
      ```
      showing the `/logs` and `/cyt180` directories. You must capture this screenshot after completing step 5.
 
-3. **Log file**
-   - A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
+3. **Log file** - A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
 
 4. **WordCount Job Output**
    - A screenshot showing the result of:
