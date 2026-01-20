@@ -83,7 +83,7 @@ These two files tell Hadoop:
 - where to store NameNode/DataNode data
 - how many replicas to maintain
   
-Run the following commands:
+Run the following code all at once:
 
 ```
 
