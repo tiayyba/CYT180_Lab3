@@ -8,8 +8,7 @@ Submission Format: Single PDF file containing screenshots from the Jupyter Noteb
 
 ## Lab Objectives
 This lab introduces Hadoop in **pseudo‑distributed mode** on Google Colab and walks you through loading and analyzing **cybersecurity datasets** using HDFS + MapReduce/Streaming.  This environment allows you to experiment with Hadoop without installing anything locally.
-
-## Learning Objectives
+By the end of this lab, you should be able to:
 - Install and configure Hadoop in a Linux environment (Colab).
 - Create, inspect, and manipulate directories & files in HDFS.
 - Understand how HDFS metadata and block storage work in practice.
