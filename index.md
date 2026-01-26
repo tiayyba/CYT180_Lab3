@@ -1,8 +1,8 @@
 
 # CYT180 – Lab3: Intro to Hadoop & HDFS for Cybersecurity Data Analytics (Google Colab)
-Weight: 3%<br>
-Work Type: Individual<br>
-Submission Format: Single PDF file containing screenshots from the Jupyter Notebook <br>
+**Weight:** 3% <br>
+**Work Type:** Individual <br>
+**Submission Format:** Single PDF file containing screenshots from the Jupyter Notebook <br>
 
 ---
 
