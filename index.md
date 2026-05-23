@@ -332,7 +332,7 @@ In this lab, you successfully:
   - Incorrect filename
   - Incorrect order of screenshots
   - Blurry screenshots
-  - Missing Task headings (Task1, Task2, etc)
+  - Missing headings for screenshots (use the required name as stated in the previous section)
   - Work that seems rushed and unprofessional!
 - Academic integrity policies apply. I will ask students questions on thier labs in the following week. If you are not able to answer the questions, your submission's marks will be reduced!
 - AI-generated answers are not permitted and will strictly result in a grade of zero.
