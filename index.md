@@ -292,20 +292,19 @@ In this lab, you successfully:
 ---
 ## Submission Instructions
 
-All lab work must be submitted as a **single PDF file** on Blackboard containing screenshots of your notebook. You should create a **Word document**, add all screenshots in order, and then convert it to PDF.<br>
+1. All lab work must be submitted as a **single PDF file** on Blackboard containing screenshots of your notebook. You should create a **Word document**, add all screenshots in order, and then convert it to PDF.<b
 The file name should be `<FirstName_LastName_StudentID_Lab03.pdf>`.
-Follow these steps carefully:
-1. At the top of each task cell, include your **name and student ID as a comment**.  
+2. At the top of each task cell, include your **name and student ID as a comment**.  
      Example:
      ```python
      # Name: Your Name
      # Student ID: 123456789
      ```
-2. **Demonstrate work was done on your own machine**:
+3. **Demonstrate work was done on your own machine**:
    - Open a **Windows Terminal** (or command prompt).  
    - Print your **system username**, **current date**, and **current time**. You will capture this output along with code.
 
-3. Submit **5 screenshots** that clearly show the work you completed in this lab. Your screenshots **must include** the following:
+4. Submit **5 screenshots** that clearly show the work you completed in this lab. Your screenshots **must include** the following:
   - **Hadoop Daemons Running —** output of:
      ```bash
      !jps
