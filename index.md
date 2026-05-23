@@ -292,9 +292,20 @@ In this lab, you successfully:
 ---
 ## Submission Instructions
 
-- Submit **5 screenshots** that clearly show the work you completed in this lab.
+All lab work must be submitted as a **single PDF file** on Blackboard containing screenshots of your notebook. You should create a **Word document**, add all screenshots in order, and then convert it to PDF.<br>
+The file name should be `<FirstName_LastName_StudentID_Lab03.pdf>`.
+Follow these steps carefully:
+1. At the top of each task cell, include your **name and student ID as a comment**.  
+     Example:
+     ```python
+     # Name: Your Name
+     # Student ID: 123456789
+     ```
+2. **Demonstrate work was done on your own machine**:
+   - Open a **Windows Terminal** (or command prompt).  
+   - Print your **system username**, **current date**, and **current time**. You will capture this output along with code.
 
-- Your screenshots **must include** the following:
+3. Submit **5 screenshots** that clearly show the work you completed in this lab. Your screenshots **must include** the following:
   - **Hadoop Daemons Running —** output of:
      ```bash
      !jps
@@ -315,7 +326,17 @@ In this lab, you successfully:
      ```bash
      !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
      ```
+
+----
+## Important Notes
 - Please ensure all screenshots are **clear, readable, and taken from your own Colab session**.
-- With each screenshot, include date and time as a proof from a separate terminal window.
-- Submit your screenshots as a **single PDF**.
+- Late submissions receive **-20% per day**
+- Submissions that do not follow the instructions will receive a **grade of zero**. Examples include:
+  - Incorrect filename
+  - Incorrect order of screenshots
+  - Blurry screenshots
+  - Missing Task headings (Task1, Task2, etc)
+  - Work that seems rushed and unprofessional!
+- Academic integrity policies apply. I will ask students questions on thier labs in the following week. If you are not able to answer the questions, your submission's marks will be reduced!
+- AI-generated answers are not permitted and will strictly result in a grade of zero.
 
