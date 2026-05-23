@@ -316,13 +316,13 @@ In this lab, you successfully:
     - **Log file —**  A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
 
   - **WordCount Job Output —**  screenshot showing the result of:
-       ```bash
-       !hdfs dfs -cat /output_wordcount/part-r-00000 | head
-       ```
-    - **Grep Job Output —** a screenshot showing the result of:
-       ```bash
-         !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
+    ```bash
+    !hdfs dfs -cat /output_wordcount/part-r-00000 | head
      ```
+  - **Grep Job Output —** a screenshot showing the result of:
+     ```bash
+       !hdfs dfs -cat /output_grep_tcp/part-r-00000 | head -20
+    ```
 
 ----
 ## Important Notes
