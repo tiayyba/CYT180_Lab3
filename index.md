@@ -237,7 +237,7 @@ Run the command below to view the examples included with Hadoop:
 - helps verify that the Hadoop environment is configured correctly
 - allows us to analyze a real cybersecurity log file
 
-Because Zeek logs are stored as plain text, WordCount can process them directly. Run WordCount to count how many times each unique token appears in the Zeek log.
+Because Zeek logs are stored as plain text, `WordCount` can process them directly. Run WordCount to count how many times each unique token appears in the Zeek log.
 
 **Run WordCount on the Zeek conn.log**
 
