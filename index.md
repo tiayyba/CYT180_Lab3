@@ -235,7 +235,7 @@ Even though it's not cybersecurity‑specific, WordCount is perfect for:
 - validating that HDFS + MapReduce works
 - running a real distributed job on the Zeek log
 
-And Zeek logs are plaintext, so running WordCount on them works immediately. We can run WordCount to display log entries containing the text `tcp`
+And Zeek logs are plaintext, so running WordCount on them works immediately. We can run WordCount to count how many times each unique token appears in the Zeek log.
 
 **Run WordCount on the Zeek conn.log**
 
@@ -315,7 +315,7 @@ In this lab, you successfully:
        ```bash
        !hdfs dfs -ls /
        ```
-       showing the `/logs`. You must capture this screenshot after completing step 5 and step 6.
+       showing the `/logs`. You must capture this screenshot after completing step 6.
 
     - **Log file —**  A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
 
