@@ -220,22 +220,24 @@ A typical conn.log line looks like:
 
 A full description of fields can be found in Zeek documentation (not needed for the lab).
 
-### Step 8 — MapReduce Example: 
-The Hadoop examples JAR contains several built-in MapReduce programs. Run the command below to view the available examples.
+### Step 8 — Exploring Hadoop Example Programs 
+In the previous steps, you used HDFS to store a cybersecurity log file. Hadoop also includes built-in data processing programs that can analyze data stored in HDFS.
 
+In this lab, you will run some of these built-in examples to see how Hadoop can process cybersecurity data. The details of how these programs work will be covered in the next module when we study MapReduce.
+
+Run the command below to view the examples included with Hadoop:
 ```
 
 !hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar
 ```
 
-The most classic one is WordCount.
-Even though it's not cybersecurity‑specific, WordCount is perfect for:
+`WordCount` is a built-in Hadoop example that counts how many times each unique word or token appears in a file. We will use it to analyze the Zeek log stored in HDFS. Even though it's not cybersecurity‑specific, WordCount is perfect for:
 
-- learning Map → shuffle → reduce
-- validating that HDFS + MapReduce works
-- running a real distributed job on the Zeek log
+- demonstrates how Hadoop can process data stored in HDFS
+- helps verify that the Hadoop environment is configured correctly
+- allows us to analyze a real cybersecurity log file
 
-And Zeek logs are plaintext, so running WordCount on them works immediately. We can run WordCount to count how many times each unique token appears in the Zeek log.
+Because Zeek logs are stored as plain text, WordCount can process them directly. Run WordCount to count how many times each unique token appears in the Zeek log.
 
 **Run WordCount on the Zeek conn.log**
 
@@ -259,9 +261,7 @@ And Zeek logs are plaintext, so running WordCount on them works immediately. We 
 WordCount counts how many times each unique token appears in the log file. Common results may include protocol names (tcp, udp), status flags, IP addresses, and other values found in the log.
 
 ### Step 9 — Use Hadoop’s Built‑In Grep Example
-Hadoop also has a built‑in grep job for filtering matching lines.
-We'll use it to search for all TCP connections inside the Zeek log.
-Run grep to extract lines containing `tcp`. Since `tcp` appears in the protocol field of most flows, so this will return lines containing TCP traffic.
+Grep is a built-in Hadoop example that searches for lines containing specific text. We will use it to find log entries containing the text `tcp`.
 
 ```
 
