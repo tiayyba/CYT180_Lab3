@@ -154,6 +154,8 @@ Run the following commands one by one. You may ignore warnings about “Unable t
 
 ```
 
+Notice that the NameNode and DataNode services are running. The NameNode manages file metadata, while the DataNode stores the actual data blocks.
+
 ### Step 5 — Create HDFS Directories
 Let's create a directory for stroing logs in HDFS.
 
