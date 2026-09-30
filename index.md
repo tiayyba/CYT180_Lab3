@@ -305,7 +305,8 @@ In this lab, you successfully:
      ```
 - **Demonstrate work was done on your own machine**:
    - Open a **Windows Terminal** (or command prompt).  
-   - Print your **system username**, **current date**, and **current time**. You will capture this output along with code.
+   - Print your **system username** and **current date**. You will capture this output along with code.
+     
 - Submit **5 screenshots** that clearly show the work you completed in this lab. Your screenshots **must include** the following:
     - **Hadoop Daemons Running —** output of:
        ```bash
