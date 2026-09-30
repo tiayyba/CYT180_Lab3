@@ -135,7 +135,7 @@ EOF
 ```
 
 - fs.defaultFS → The NameNode URI
-- dfs.replication=1 → Required for single-node mode
+- dfs.replication=1 → Replication is set to 1 because Google Colab uses a single DataNode. In production Hadoop clusters, a replication factor of 3 is commonly used.
 - NameNode/DataNode dirs → Where metadata + data blocks are stored
 
 ### Step 4 — Format HDFS and Start Daemons
@@ -155,11 +155,11 @@ Run the following commands one by one. You may ignore warnings about “Unable t
 ```
 
 ### Step 5 — Create HDFS Directories
-Let's create a directory for cyt180 in HDFS.
+Let's create a directory for stroing logs in HDFS.
 
 ```
 
-!hdfs dfs -mkdir /cyt180
+!hdfs dfs -mkdir -p /logs
 !hdfs dfs -ls /
 
 ```
@@ -185,7 +185,6 @@ Run the following commands.
 
 ```
 
-!hdfs dfs -mkdir -p /logs
 !hdfs dfs -put conn.log /logs/
 !hdfs dfs -ls /logs
 
@@ -222,12 +221,11 @@ A typical conn.log line looks like:
 A full description of fields can be found in Zeek documentation (not needed for the lab).
 
 ### Step 8 — MapReduce Example: 
-Hadoop ships with several example jobs in the directory:
+The Hadoop examples JAR contains several built-in MapReduce programs. Run the command below to view the available examples.
 
 ```
 
-$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar
-
+!hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar
 ```
 
 The most classic one is WordCount.
@@ -237,7 +235,7 @@ Even though it's not cybersecurity‑specific, WordCount is perfect for:
 - validating that HDFS + MapReduce works
 - running a real distributed job on the Zeek log
 
-And Zeek logs are plaintext, so running WordCount on them works immediately.
+And Zeek logs are plaintext, so running WordCount on them works immediately. We can run WordCount to display log entries containing the text `tcp`
 
 **Run WordCount on the Zeek conn.log**
 
@@ -257,6 +255,8 @@ And Zeek logs are plaintext, so running WordCount on them works immediately.
 !hdfs dfs -cat /output_wordcount/part-r-00000 | head
 
 ```
+
+WordCount counts how many times each unique token appears in the log file. Common results may include protocol names (tcp, udp), status flags, IP addresses, and other values found in the log.
 
 ### Step 9 — Use Hadoop’s Built‑In Grep Example
 Hadoop also has a built‑in grep job for filtering matching lines.
@@ -315,7 +315,7 @@ In this lab, you successfully:
        ```bash
        !hdfs dfs -ls /
        ```
-       showing the `/logs` and `/cyt180` directories. You must capture this screenshot after completing step 5.
+       showing the `/logs`. You must capture this screenshot after completing step 5 and step 6.
 
     - **Log file —**  A screenshot showing the `conn.log` file present in the directory after unzipping and before uploading.
 
